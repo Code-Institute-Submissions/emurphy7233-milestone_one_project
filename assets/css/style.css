@@ -1,0 +1,210 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*font styling*/
+h1{
+    font-size: 15px;
+}
+
+/*end of font styling*/
+
+/*navigation*/
+
+nav{
+    background-color: #fff;
+    padding: 0;
+    text-decoration: none;
+    display: flex;
+}
+
+.navbar{
+    padding: 70px;
+}
+
+.navbar-toggler{
+    background-color: RGB(40,188,164, .3);
+    clear: both;
+}
+
+
+nav .menu{
+    font-size: 1.5rem;
+    letter-spacing: 3.5px;
+}
+
+.navbar-social{
+    margin-left: auto;
+}
+
+
+
+/* Extra small devices (portrait phones, less than 576px)
+ No media query since this is the default in Bootstrap*/
+
+.nav-item{
+    display: block;
+}
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    
+  }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    nav .menu{
+    font-size: 1.2rem;
+        }
+    nav .nav-link{
+    padding: .5rem;
+        }
+    .nav-item{
+        display: inline-block;
+    }    
+
+
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    nav .menu{
+    font-size: 2rem;
+        }
+
+    nav .nav-link{
+    padding: .5rem 1.2rem;
+        }
+    
+    .navbar-brand{
+    padding-right: 75px;
+        }
+     }
+
+
+.navbar-brand{
+    padding-right: 40px;
+    margin: 0;
+}
+
+nav img{
+     width: 180px; 
+}
+
+
+nav li{
+    display: inline-block;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+    
+}
+
+.menu .active{
+    
+    font-weight:bold;
+}
+/*end of navigation */
+
+.social-media{
+    text-decoration: none;
+}
+
+/*footer*/
+
+footer{
+    margin-top: 100px;
+}
+/*end of footer*/
+
+/*services page CSS*/
+
+#services-container{
+    /* padding-top: 50px; */
+    clear: both;
+    line-height: 0;
+    column-count: 1;
+    column-gap: 0px;
+    font-size: 2em;
+    margin-bottom: 150px;
+}
+
+#services-container img{
+    width: 100%;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    #services-container{
+        column-count: 2;
+    }
+ }
+
+ /* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    #services-container{
+        column-count: 3;
+    }
+}
+
+/*Referenced from W3C Schools*/
+
+.image-title {
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: RGB(40,188,164);
+}
+
+.image-title:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*end of services CSS*/
+
+/*Contact page CSS*/
+
+.business-hours{
+   list-style-type: none;
+}
+
+#opening-times{
+    width: 350px;
+}
+
+/*End of Contact page CSS*/
